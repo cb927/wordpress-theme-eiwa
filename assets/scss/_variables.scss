@@ -1,18 +1,19 @@
 @charset "utf-8";
 
-$main-color : #00205B;
-$yellow1 : #B70006;
-$yellow2 : #FFA000;
-
+$main-color: #00205B;
+$yellow1: #B70006;
+$yellow2: #FFA000;
 
 @font-face {
     font-family: "frontage3d";
     src: url("../font/Frontage3D.otf");
 }
+
 @font-face {
     font-family: "creamson";
     src: url("../font/Creamson.otf");
 }
+
 @font-face {
     font-family: "circular";
     src: url("../font/CircularStd-Book.otf");
@@ -31,14 +32,14 @@ $yellow2 : #FFA000;
 }
 
 @mixin flex-center {
-    @include display-flex();
-    @include align-items-center();
-    @include justify-content-center();
+    @include display-flex;
+    @include align-items-center;
+    @include justify-content-center;
 }
 
 @mixin flex-center-v {
-    @include display-flex();
-    @include align-items-center();
+    @include display-flex;
+    @include align-items-center;
 }
 
 @mixin display-flex {
@@ -75,23 +76,27 @@ $yellow2 : #FFA000;
 
 @mixin justify-content-space-around {
     @include justify-content(space-around);
+
     -webkit-box-pack: distribute;
     -ms-flex-pack: distribute;
 }
 
 @mixin justify-content-space-between {
     @include justify-content(space-between);
+
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
 }
 
 @mixin justify-content-flex-start {
     @include justify-content(flex-start);
+
     -webkit-box-pack: start;
 }
 
 @mixin justify-content-flex-end {
     @include justify-content(flex-end);
+
     -webkit-box-pack: end;
 }
 
@@ -159,6 +164,10 @@ $yellow2 : #FFA000;
 
 @mixin transition-all {
     @include transition(all, 0.3s, ease);
+}
+
+@mixin transition-background {
+    @include transition(background-color, 0.3s, linear);
 }
 
 @mixin transform($v) {

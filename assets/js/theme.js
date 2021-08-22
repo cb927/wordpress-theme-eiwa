@@ -18,4 +18,8 @@ $(document).ready(function () {
 		$(this).toggleClass('active')
 		$('.nav__group').toggleClass('active')
 	})
+	$('.nav__item').click(function(){
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
+	})
 })

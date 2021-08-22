@@ -3,8 +3,6 @@
     color: white;
     padding: 15px 20px;
 
-    @include transition-all;
-
     &:hover {
         background: linear-gradient(135deg, $yellow2, $yellow1);
     }
@@ -160,10 +158,10 @@ section {
         background-image: url(../img/banner.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: left;
 
         &.banner--top {
-            padding: 208px 170px;
+            padding: 208px 120px;
             color: white;
             background-image: url(../img/banner-landing.jpg);
 
@@ -173,7 +171,7 @@ section {
             }
 
             .banner__text2 {
-                height: 200px;
+                height: 225px;
             }
 
             .banner__text3 {
@@ -213,6 +211,22 @@ section {
 
             &.service__goto--2 {
                 background-image: url(../img/service2.jpg);
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                opacity: 0;
+                background: linear-gradient(135deg, $yellow2, $yellow1);
+                @include transition-all;
+            }
+            &:hover {
+                &::before {
+                    opacity: 0.3;
+                }
             }
         }
     }
@@ -601,6 +615,22 @@ section {
                 font-weight: bold;
                 margin-bottom: 20px;
             }
+            &::before {
+                content: '';
+                position: absolute;
+                right: 0;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                opacity: 0;
+                background: linear-gradient(135deg, $yellow2, $yellow1);
+                @include transition-all;
+            }
+            &:hover {
+                &::before {
+                    opacity: 0.3;
+                }
+            }
         }
     }
 }
@@ -760,11 +790,12 @@ footer {
         padding-bottom: 15vw;
 
         &.banner {
+            background-position: center;
             &.banner--top {
                 padding: 10vw 5vw;
 
                 .banner__text1 {
-                    font-size: 5vw;
+                    font-size: 4.8vw;
                 }
 
                 .banner__text2 {
@@ -772,7 +803,7 @@ footer {
                 }
 
                 .banner__text3 {
-                    font-size: 7.5vw;
+                    font-size: 7vw;
                 }
             }
         }

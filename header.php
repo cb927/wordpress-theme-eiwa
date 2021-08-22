@@ -32,24 +32,40 @@
         </a>
         <div class="nav-right">
             <div class="nav__group">
-                <div class="nav__link">
-                    <a href="<?php echo home_url(); ?>/company_profile" class="nav__item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/play.png" alt="">
-                        <p>事業案内</p>
-                    </a>
-                    <a href="<?php echo home_url(); ?>/company" class="nav__item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/play.png" alt="">
-                        <p>会社概要</p>
-                    </a>
-                    <a href="<?php echo home_url(); ?>/info" class="nav__item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/play.png" alt="">
-                        <p>お知らせ</p>
-                    </a>
-                    <a href="<?php echo home_url(); ?>/recruit" class="nav__item">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/play.png" alt="">
-                        <p>採用情報</p>
-                    </a>
-                </div>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="#!" class="nav__link">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/play.png" alt="">
+                            <p>事業案内</p>
+                        </a>
+                        <div class="nav__sub">
+                            <a href="<?php echo home_url(); ?>/service1" class="nav__sub__item">燃料配達サービス</a>
+                            <a href="<?php echo home_url(); ?>/service2" class="nav__sub__item">サービスステーション事業</a>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#!" class="nav__link">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/play.png" alt="">
+                            <p>会社概要</p>
+                        </a>
+                        <div class="nav__sub">
+                            <a href="<?php echo home_url(); ?>/company_profile" class="nav__sub__item">会社概要</a>
+                            <a href="<?php echo home_url(); ?>/company" class="nav__sub__item">社長挨拶</a>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="<?php echo home_url(); ?>/info" class="nav__link">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/play.png" alt="">
+                            <p>お知らせ</p>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="<?php echo home_url(); ?>/recruit" class="nav__link">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/play.png" alt="">
+                            <p>採用情報</p>
+                        </a>
+                    </li>
+                </ul>
                 <div class="nav__social">
                     <a href="#" class="social__item">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter.png" alt="">
